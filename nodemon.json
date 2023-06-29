@@ -1,0 +1,7 @@
+{
+    "env" : {
+        "PORT": "5000",
+        "Server": "Server=tcp:indice-academico.database.windows.net,1433;Initial Catalog=indice-academico;Persist Security Info=False;User ID=resh;Password=indiceAcademico12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+        "NEXT": ""
+    }
+}
