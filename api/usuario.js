@@ -7,7 +7,7 @@ router.post('/', (req, res) => {
 });
 
 router.patch('/', (req, res) => {
-    metodos.editarUsuario(req.body.ID,req.body.nombre,req.body.apellido, req.body.correo, req.body.contrasena, req.body.rolID, req.body.carreraID, res);
+    metodos.editarUsuario(req.body.ID,req.body.nombre,req.body.apellido, req.body.correo, req.body.contrasena,res);
 });
 
 router.delete('/', (req, res) => {
