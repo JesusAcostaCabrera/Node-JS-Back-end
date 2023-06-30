@@ -27,7 +27,7 @@ async function insertarUsuario(nombre, apellido, correo, contrasena, rolID, carr
     res.status(200).json(result.recordset);
 }
 
-async function editarUsuario(ID, nombre, apellido, correo, contrasena, rolID, carreraID, res) {
+async function editarUsuario(ID, nombre, apellido, correo, contrasena, res) {
     await sql.connect(process.env.Server)
 
     let pool = new sql.Request();
@@ -36,8 +36,6 @@ async function editarUsuario(ID, nombre, apellido, correo, contrasena, rolID, ca
     await pool.input('apellido',apellido);
     await pool.input('correo',correo);
     await pool.input('contrasena',contrasena);
-    await pool.input('rolID',rolID);
-    await pool.input('carreraID',carreraID);
 
     let result = await pool.execute('editarUsuario');
     
